@@ -1,0 +1,302 @@
+/*=========== 00. RESET CSS ================ */	
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:before, :after  {
+    box-sizing: border-box;
+}
+a, span, :before, :after { 
+    display: inline-block; 
+}
+:focus {
+    outline: none;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+img {
+    max-width: 100%;
+}
+
+body {
+    line-height: 1.285;
+    color: #555;
+    font-weight: 400;
+    min-height: 2000px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+/*=========== 00. General ================ */	
+.row {
+    font-size: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row [class*="hm-col-"],
+.row[class*="hm-column-"] .item {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.row.va-m [class*="hm-col-"] {
+    vertical-align: middle;
+}
+.hm-col-9 {
+    width: 75%;
+}
+.hm-col-3 {
+    width: 25%;
+   
+}
+.hm-column-5 .item {
+    width: 20%;
+}
+.hm-column-4 .item {
+    width: 25%;
+    display: inline-block;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ================01. HEADER============= */
+header{
+    padding: 10px 0;
+
+}
+header .container{
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.2);
+}
+.container .logo{
+    display: inline-block;
+    width: 160px;
+    vertical-align: middle;
+    padding: 7px 10px;
+    
+}
+.container nav{
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: middle;
+    
+}
+.container nav li{
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+}
+.container nav li a{
+   color: #cb672e;
+   padding:16.5px 10px;
+   font-weight: bold;
+}
+.container nav li:hover > a{
+    color: #fff;
+	background-color: #cb672e;
+}
+.input-group form{
+    padding: 0 20px;
+    position: relative;
+}
+.input-group input{
+    width:100%;
+    border: none;
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px 30px;
+    border-radius: 5%;
+    
+}
+.input-group .icon-search{
+    position: absolute;
+    top:10px;
+    right: 30px;
+}
+
+/* ===========02. BODY============== */
+.wrapper-content{
+    min-height: 500px;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.2);
+    padding:15px;
+    padding-bottom: 40px;
+    background-color: #fff;
+}
+.wrapper-content .welcome h1{
+    color: #cb672e;
+    text-align: center;
+    text-transform: uppercase;
+}
+.wrapper-content .welcome p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.wrapper-content .welcome a{
+    color: #cb672e;
+    font-size: 24px;
+}
+.wrapper-product{
+    margin-top: 45px;
+}
+.title-product{
+    position: relative;
+    color: #fff;
+    background-color: #cb672e;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+.title-product::after{
+    content: " ";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    top: 10px;
+    left: 10px;
+}
+.title-product::before{
+    content: " ";
+    position: absolute;
+    border-top: 15px solid #fff;
+    border-right: 15px solid transparent;
+    top: 0;
+    left: 0;
+}
+
+.product h1{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+
+.product h1 a{
+    color: #323232;
+}
+.product h1 a:hover{
+    color: #cb672e;
+}
+.product .img{
+    border: 1px solid #dbdbdb;
+    display: block;
+    position: relative;
+}
+.product .img::before{
+    content: " ";
+    background-color: #000;
+    padding-top: 100%;
+    display:block;
+}
+.product .img img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.product .img::after{
+    content: " ";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background-color: rgba(51,51,51,0);
+    transition: all .3s ease;
+}
+
+.product:hover .img::after{
+    background-color: rgba(51,51,51,0.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.title h1{
+    font-weight: bold;
+    color: #cb672e;
+    padding: 10px 0;
+}
+.download-button{
+    margin: 10px auto;
+    border: 1px solid rgba(0,0,0,0.7);
+    border-radius: 6px;
+    vertical-align: middle;
+    text-align: center;
+    width: fit-content;
+    background-color: #cb672e;
+    transition: all 0.5s ;
+    box-shadow: 1px 1px 4px 3px rgba(0,0,0,0.2);
+}
+.download-button a{
+    padding: 10px 30px;;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+.download-button:hover{
+    background-color: #55B85C;
+}
+.chose-version{
+    margin:0 auto;
+    width: fit-content;
+}
+.chose-version p{
+    text-align: center;
+    text-transform: uppercase;
+    color: #cb672e;
+    font-size: 24px;
+}
+.chose-version a{
+    margin: 10px 50px;
+    color: #55B85C;
+    font-size: 20px;
+    display: block;
+    transition: all .3s;
+}
+.chose-version a:hover{
+    color: #cb672e;
+}
+.product-img{
+    margin: 10px auto;
+    width: 75%;
+    text-align: center;
+}
+
+/* ===================03. SIDEBAR================= */
+.container .hm-col-3 aside{
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.2);
+    /* min-height: 500px; */
+}
+
+.style-02 .widget-title {
+    color: #fff;
+    padding: 12px 28px 8px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #cb672e;
+}
